@@ -38,3 +38,8 @@ return view('coba1');
 Route::get('coba2', function () {
 return view('coba2');
 });
+
+Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
